@@ -1,13 +1,192 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main: #735185;
+  --light-main: #a180b1;
+  --grey: #ebecf0;
+  --white: #fff;
+  --p: #989898;
+  --primary: #ef4511;
+  --dark-primary: #b72024;
+  --black: #000000;
+  --green: #0ed1b3;
+  --lite-bg: #b4c2c2;
+  --dark-bg: #869898;
+  --gray-color: #6b6b6b;
+  --text-color: #b1b1b1;
+  --background: #f5f6f7;
+  --p-grey: #707070;
+  --border: #dbdbdb;
+  --label: #949494;
+  --accordion: #eeeeee;
+  --label-off: #a5b8b8;
+  --label-on: #b4c0e4fb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'fairuz', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: middle;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main) !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+i,
+svg {
+  line-height: 0;
+}
+
+.btn,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main);
+}
+
+.link {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+}
+[type='email'],
+[type='number'],
+[type='tel'],
+[type='url'] {
+  direction: rtl !important;
+}
+.tab-background {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem 4rem;
+}
+body {
+  background-color: #fcfcfc;
+  position: relative !important;
+}
+
+.nav-link.active {
+  color: var(--primary) !important;
 }
